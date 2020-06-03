@@ -10,10 +10,5 @@ env: DJANGO_SETTINGS_MODULE="disquaire_project.settings"
 services:
   - postgresql
 
-# safelist
-branches:
-  only:
-    - staging
-
 script:
   - ./manage.py test
